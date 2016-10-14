@@ -1,0 +1,10 @@
+/*公众号区域*/
+#publicPanel {
+    margin: 0;
+    padding: 0;
+    /*background-color: #EAEAEA;*/
+    border: 1px solid #1F3B86;
+    /*border:1px solid red;*/
+/*    width: 90%;
+    height: 90%;*/
+}

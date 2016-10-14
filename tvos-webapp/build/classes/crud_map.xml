@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.mybatis.crud.crudMap">
+	<!-- 将一条数据转换成一个对象 -->
+		<select id="getUserById" parameterType="int" resultType="com.mybatis.crud.vo.User">
+			select * from users where id = #{id}
+		</select>
+	
+	<!-- 当数据库表字段名与对象名不同时 使用别名 或者resultMap -->
+	<!--一、使用别名  -->
+		<select id="getOrderById" parameterType="int" resultType="com.mybatis.crud.vo.Order">
+			select order_id orderId, order_no orderNumber,order_price orderPrice from orders where order_id = #{id}
+		</select>
+	<!--二、使用resultMap  -->
+		<resultMap type="com.mybatis.crud.vo.Order" id="orderResultMap">
+			<id property="orderId" column="order_id"/>
+			<result property="orderNumber" column="order_no"/>
+			<result property="orderPrice" column="order_price"/>
+		</resultMap>
+		<select id="getOrderByIDWithResultMap" parameterType="int" resultMap="orderResultMap">
+			select * from orders where order_id = #{id}
+		</select>
+	
+	<!-- 增 -->
+		<insert id="insertIntoUsers" parameterType="com.mybatis.crud.vo.User">
+			insert into users(name,age) values (#{name},#{age});
+		</insert>
+		<insert id="insertIntoOrders" parameterType="com.mybatis.crud.vo.Order">
+			insert into orders(order_no,order_price) values (#{orderNumber},#{orderPrice});
+		</insert>
+	
+	<!-- 删 -->
+		<delete id="deleteUser" parameterType="int">
+			delete from users where id=#{id}
+		</delete>
+	<!-- 改-->
+		<update id="updateUser" parameterType="com.mybatis.crud.vo.User">
+			update users set name=#{name},age=#{age} where id = #{id}
+		</update>
+	
+</mapper>

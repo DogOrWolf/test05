@@ -1,0 +1,45 @@
+.userDetailFor720x567{
+	width: 220px;
+	height: 330px;
+	color: red;
+	border: 1px solid white;
+	background-color: white;
+	position: absolute;
+	left: 30px;
+	top: 30px;	
+	-webkit-border-radius: 5px; /*只支持webkit内核的浏览器*/
+	border-radius: 5px; /*只支持IE内核的浏览器（IE>=7)*/
+	-moz-border-radius : 5px; /*只支持Mozilla内核的浏览器*/
+}
+
+ .userDetailFor1280x720{
+	width: 220px;
+	height: 330px;
+	color: red;
+	border: 1px solid white;
+	background-color: white;
+	position: absolute;
+	left: 65px;
+	top: 65px;	
+	-webkit-border-radius: 5px; /*只支持webkit内核的浏览器*/
+	border-radius: 5px; /*只支持IE内核的浏览器（IE>=7)*/
+	-moz-border-radius : 5px; /*只支持Mozilla内核的浏览器*/
+}
+
+#userDetail .userDetailImage{
+	width: 220px;
+	height: 220px;
+	margin:0 auto;
+	/*padding-top: 40px;*/
+	background-color: #F0F6F4;
+	/*position: relative;*/
+/*	left: 30px;
+	top: 30px;*/	
+}
+
+#userDetail .userDetailInfo{
+	width: 220px;
+	height: 100px;
+	text-align: center;
+	padding-top: 20px;
+}

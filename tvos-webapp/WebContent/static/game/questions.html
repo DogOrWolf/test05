@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>在线问卷答题</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style type="text/css">
+html {
+	height:95%;
+	margin:0;
+	padding:0;
+}
+body {
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.demo{width:90%; height:100%;margin:10px auto}
+
+</style>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+<script type="text/javascript">
+var init={
+		'questions':[
+			             {
+			            	 'question':'1929年12月举行的古田会议,初步回答了在党员以____为主要成分的情况下，如何从加强党的思想建设着手,保持党的无产阶级先锋队性质的问题。',
+			            	 'answers':['工人','学生','农民','小资产阶级 '],
+			            	 'correctAnswer':3
+			             },
+			             {
+			            	 'question':'土地革命战争时期,中国共产党走上了“工农武装割据”的道路，实行___三者结合起来的方针。 ',
+			            	 'answers':['统一战线、武装斗争、党的建设','武装斗争、土地革命、根据地建设','发展经济、自己动手、丰衣足食','积攒力量、攻占城市、保卫根据地'],
+			            	 'correctAnswer':2
+			             },
+			             {
+			            	 'question':'1921年7月23日，党的一大在上海开幕。后因代表们的活动受到监视,大会转移到浙江____继续召开。党的一大的召开宣告中国共产党正式成立。',
+			            	 'answers':['杭州西湖','嘉兴南湖','绍兴东湖','宁波东钱湖'],
+			            	 'correctAnswer':2},
+			             {
+			            	 'question':'新中国成立初期，为了发展国营经济，也为了发挥其他经济成分的重要作用，党提出了____的经济建设方针。',
+			            	 'answers':['在综合平衡中稳步前进','有些地方停下来、有些地方发展','公私兼顾、劳资两利、城乡互助、内外交流','重点建设、稳步前进'],
+			            	 'correctAnswer':3
+			             }
+		            ]
+		  };
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+
+	<div class="demo">
+	<div id='quiz-container'></div>
+	</div>
+
+
+
+</body>
+</html>

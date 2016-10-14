@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="UTF-8" />
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/appPanel.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/middlebar.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/middlebar1.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/middlebar2.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/chatfield.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/userDetail.css">
+	<script type="text/javascript" src="src/store.js"></script>
+	<script type="text/javascript" src="jquery/jquery-1.7.2.js"></script>
+	<!--<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>-->
+	<script type="text/javascript">
+		window.onload = function(){
+			// alert(window.screen.height);		
+			if(window.screen.width == 1280 && window.screen.height == 720){
+
+				document.getElementById("chatFieldTextareaId").setAttribute("class","textareaFor1280x720");
+				// document.getElementById("appPanel").setAttribute("class","appPanelFor720x567");
+
+				// document.getElementById("userDetail").setAttribute("class","userDetailFor1280x720");
+			}
+
+			if(window.screen.width == 720 && window.screen.height == 576){
+				document.getElementById("appPanel").setAttribute("class","appPanelFor720x567");
+				document.getElementById("userDetail").setAttribute("class","userDetailFor720x567");
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<!-- <component is="{{currentview}}"></component> -->
+	<div id="appPanel" class="appPanelFor1280x720">
+		<div id="chat">
+		<tag-main></tag-main>
+	</div>
+	</div>
+
+	<script type="text/javascript" src="vue/vue.js"></script>
+	<script type="text/javascript" src="src/chat.js"></script>
+	<script type="text/javascript" src="src/siderbar.js"></script>
+	<script type="text/javascript" src="src/middlebar1.js"></script>
+	<script type="text/javascript" src="src/middlebar2.js"></script>
+	<script type="text/javascript" src="src/chatPanel.js"></script>
+	<script type="text/javascript" src="src/userDetail.js"></script>
+	<script type="text/javascript" src="src/app.js"></script>
+	
+</body>
+</html>

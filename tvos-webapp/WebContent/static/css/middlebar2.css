@@ -1,0 +1,126 @@
+#contactsAndPublic {
+	width:100%;
+	height:87%;
+	/*border:1px solid blue;*/
+	margin-top: 3%;
+}
+
+#contactsAndPublic .area {
+	width: 100%;
+	height: 32%;
+	/*border:1px solid black;*/
+}
+/*鏂扮殑鏈嬪弸涓�鏍�
+#contactsAndPublic .newFriends {
+	width: 100%;
+	height: 12%;
+	border:1px solid black;
+}
+#contactsAndPublic .newFriendsTitle {
+	width: 100%;
+	height: 33%;
+	padding: 3px 0px 0px 10px;
+	color: #818181;
+	border:1px solid black;
+	background-color: #E0E0E0;
+}*/
+#contactsAndPublic .title {
+	width: 100%;
+	height: 13%;
+	padding: 3px 0px 0px 10px;
+	color: #818181;
+	/*border:1px solid black;*/
+	background-color: #E0E0E0;
+}
+#contactsAndPublic img{
+	width: 40px;
+	height: 40px;
+}
+
+/*鍏紬鍙锋牱寮�*/
+#contactsAndPublic .publicNumberList ul{
+
+}
+#contactsAndPublic .publicNumberList li{
+	width: 100%;
+	height: 50px;
+	margin: 10px;
+	/*border:1px solid black;*/
+}
+#contactsAndPublic .publicNumberList img{
+	float: left;
+}
+#contactsAndPublic .publicNumberList p{
+	float: left;
+	margin-left: 20px;
+}
+
+
+/*缇よ亰鍒楄〃鏍峰紡*/
+#contactsAndPublic .chatGroupsList ul{
+
+}
+#contactsAndPublic .chatGroupsList li{
+	width: 100%;
+	height: 50px;
+	margin: 10px;
+	/*border:1px solid black;*/
+}
+#contactsAndPublic .chatGroupsList img{
+	float: left;
+}
+#contactsAndPublic .chatGroupsList p{
+	float: left;
+	margin-left: 20px;
+}
+
+
+/*鑱旂郴浜哄垪琛ㄦ牱寮�*/
+#contactsListArea  {
+	
+	width: 100%;
+	height : 100%;
+	/*display: inline-block;*/
+	/*float: left;*/
+
+}
+#contactsListMove{
+	width: 29%;
+	height : 100%;
+	float: right;
+}
+
+#contactsListMoveUp{
+	/*float: left;*/
+/*	width: 30px;
+	height: 30px;*/
+	padding: 20px 0 20px 0;
+}
+#contactsListMoveDown{
+	/*float: left;*/
+/*	width: 40px;
+	height: 40px;*/
+	padding: 20px 0 20px 0;
+}
+#contactLists{
+	width: 70%;
+	height : 100%;
+	overflow-y : hidden;
+	float: left;
+}
+#contactLists ul{
+	
+}
+#contactLists li{
+	width: 100%;
+	height: 50px;
+	margin: 10px;
+	/*border:1px solid black;*/
+}
+#contactLists img{
+	float: left;
+}
+#contactLists p{
+	float: left;
+	margin-left: 20px;
+}

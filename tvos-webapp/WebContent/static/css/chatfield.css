@@ -1,0 +1,153 @@
+#chatPanel {
+/*    width: 100%;
+    height: 100%;*/
+	margin: 0;
+	padding: 0;
+	background-color: #EEEEEE;
+}
+#contacts {
+	width: 80%;
+	height: 10%;
+	border: 0;
+	border-bottom: 1px solid black;
+	margin: 0 auto;
+
+}
+#message {
+	width: 100%;
+	height: 60%;
+	border-top: 0;
+    /*border:1px solid red;*/
+/*    overflow-y: scroll;
+    padding-bottom: 20px;*/
+}
+#messageArea {
+    width: 90%;
+    height: 90%;
+    border-top: 0;
+    /*border:1px solid red;*/
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    float: right;
+}
+/*#textinput {
+	width: 100%;
+	height: 20%;
+	border: 1px solid blue;
+	
+}*/
+
+
+/*以下是message部分*/
+#message .time {
+    /*display:block;*/
+	margin: 7px 0;
+    text-align: center;
+    /*height: 10px;*/
+
+}
+
+
+#message .time >span {
+
+    display: inline-block;
+    padding: 0 18px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #dcdcdc;
+
+}
+
+#message .portrait {
+    float: left;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+#message .text {
+	display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    max-width: ~'calc(100% - 40px)';
+    min-height: 30px;
+    line-height: 2.5;
+    font-size: 12px;
+    text-align: left;
+    word-break: break-all;
+    background-color: #fafafa;
+    border-radius: 4px;
+
+}
+
+#message .text:before {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    right: 100%;
+    border: 6px solid transparent;
+    border-right-color: #fafafa;
+}
+
+#message .self{
+    text-align: right;
+}
+#message .self .portrait{
+    float: right;
+    margin: 0 0 0 10px;
+}
+#message .self .text{
+    background-color: #b2e281;
+}
+#message .self .text:before {
+    right: inherit;
+    left: 100%;
+    border-right-color: transparent;
+    border-left-color: #b2e281;
+}
+/*以下是输入框textarea部分*/
+#textinput {
+    width: 100%;
+    height: 30%;
+   /* border-top: solid 1px #ddd;*/
+}
+#textinput .utils {
+    padding: 0;
+    height: 25%;
+    width: 100%;
+    background-color: #E4E4E4;
+    border-bottom: 1px solid #D6D6D6;
+}
+#textinput .textarea {
+    padding: 10px;
+    height: 61%;
+    width: 95%;
+    border: none;
+    outline: none;
+    font-family: "Micrsofot Yahei";
+    resize: none;
+    background-color: #E4E4E4;
+}
+
+#textinput .textareaFor1280x720 {
+    padding: 10px;
+    height: 61%;
+    width: 97%;
+    border: none;
+    outline: none;
+    font-family: "Micrsofot Yahei";
+    resize: none;
+    background-color: #E4E4E4;
+}
+
+#textinput .utils img{
+    margin: 5px;
+}
+
+
+
+
+
+

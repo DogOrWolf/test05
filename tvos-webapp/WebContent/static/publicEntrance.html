@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="bootstrap3/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css"></link>
+	<!--<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>-->
+	<style >
+		body{
+			/*background-color: #FAF5F5;*/
+			
+		}
+		.a {
+			height: 80px;	
+		}
+		.b {
+			background-color:  #eee;
+		}
+		.c {
+			border:1px solid #ccc;
+		}
+		.heightAuto{
+			height:auto;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+		}
+
+		li{
+			list-style: none;
+			padding: 5px;
+			margin: 0;
+			border: 1px solid #ccc;
+			display: inline-block;
+		}
+
+		#entrance {
+			border: 2px solid #eee;
+			padding: 5px;
+		}
+		#entrance .firstImgClass{
+			width: 100%;
+			
+			/*height: 100px;*/
+		}
+		#entrance .firstLi{
+			border-bottom: none;
+		}
+		#entrance li{
+			width: 330px;
+		}
+		#entrance p{
+			width: 70%;
+			color: #8c8c8c;
+			font-size: 16px;
+			font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+			float: left;
+		}
+		#entrance .imgClass{
+			width: 50px;
+			height: 50px;
+			/*border: 1px solid #ccc;*/
+			float: right;
+		}
+	</style>
+	<script type="text/javascript" src="jquery/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="vue/vue.js"></script>
+	<script type="text/javascript" src="src/publicComponent.js"></script>
+</head>
+<body style="margin:50px">
+	<div id="public">
+
+		<div class="col-xs-12 a"  >
+				<ul id="entrance">
+					<li class="firstLi"><img  class="firstImgClass"src="img/public/dangjian.jpg" /></li>
+					<li>
+						<a href="public2.html">
+							<p>上外图书馆直属党支部赴陈云纪念馆开展组织生活</p>
+							<img src="img/public/dangjiantubiao.jpg" class="imgClass" />
+						</a>
+					</li>
+
+					<li v-for="info in information">
+						<a href="{{info.nextPageUrl}}">
+							<p>{{info.title}}</p>
+							<img src="{{info.imgSrc}}" class="imgClass" />
+						</a>
+					</li>
+<!-- 					<li>
+						<p>上外图书馆直属党支部赴陈云纪念馆开展组织生活</p>
+						<img src="img/public/dangjiantubiao.jpg" class="imgClass" />
+					</li>
+					<li>
+						<p>上外图书馆直属党支部赴陈云纪念馆开展组织生活</p>
+						<img src="img/public/dangjiantubiao.jpg" class="imgClass" />
+					</li> -->
+				</ul>
+		</div>	
+
+
+	</div>
+</body>
+</html>
